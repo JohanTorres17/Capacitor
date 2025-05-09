@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wordle Simple</title>
+  <link rel="stylesheet" href="src/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🔤 Wordle Simple</h1>
+    <p>Adivina la palabra de 5 letras</p>
+
+    <div id="game-board"></div>
+
+    <input type="text" id="guess-input" maxlength="5" placeholder="Escribe tu palabra" />
+    <button onclick="submitGuess()">Enviar</button>
+    <button onclick="restartGame()">Reiniciar</button>
+
+    <p id="message"></p>
+  </div>
+  <div id="game-board"></div>
+
+  <script src="src/main.js"></script>
+</body>
+</html>
