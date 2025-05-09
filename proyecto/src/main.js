@@ -3,17 +3,7 @@ const GUESSABLE_WORDS = [
   "audio", "banco", "cajas", "dulce", "error",
   "fuego", "gente", "huevo", "islas", "jugar",
   "luzca", "manos", "naran", "negro", "oroja",
-  "perro", "queso", "rojos", "silla", "tigre",
-  "aveja", "botes", "casas", "dedal", "ensue",
-  "fotos", "grito", "humor", "jalea", "karma",
-  "lupas", "miedo", "nadar", "obras", "papel",
-  "quedo", "rosas", "sueño", "trueno", "unico",
-  "viento", "whisk", "xilof", "yelmo", "zurdo",
-  "abuel", "barco", "cetro", "dados", "efect",
-  "ficha", "golpe", "hacha", "jueza", "kiwis",
-  "largo", "mundo", "nubes", "ocaso", "piano",
-  "quema", "rayos", "salud", "tiempo", "unido",
-  "veloz", "whisk", "xenon", "yerno", "zona"
+  "perro", "queso", "rojo", "silla", "tigre"
 ];
 
 // Constantes globales
@@ -123,7 +113,7 @@ function disableInput() {
 function restartGame() {
   currentRow = 0;
   secretWord = pickRandomWord();
-  createBoard();
+  createBoard(); // Genera un nuevo tablero vacío
   document.getElementById("guess-input").disabled = false;
   document.querySelector("button").disabled = false;
   document.getElementById("message").textContent = "";
